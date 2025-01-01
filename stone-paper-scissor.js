@@ -7,7 +7,7 @@ let msg=document.querySelector("#msg");
 const box=document.querySelectorAll(".box");
 
 const gencompchoice=()=>{
-    const options=["rock","paper","siscor"];
+    const options=["rock","paper","scissor"];
     const randidx=Math.floor(Math.random()*3);
     return options[randidx];
 };
@@ -58,7 +58,7 @@ const playgame=(userchoice)=>{
         }
         else if(userchoice==="paper")
         {
-            userwin=compchoice==="siscor"?false:true;
+            userwin=compchoice==="scissor"?false:true;
         }
         else
         {
